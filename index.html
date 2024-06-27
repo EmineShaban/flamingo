@@ -9,16 +9,20 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- metrica!!!!!!! --> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- metrica!!!!!!! -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
 
 </head>
 
 <body>
-    
+
     <div class="adv" style="background-color: black; ">
         <p style="text-transform: uppercase; color: white; text-align: center; padding: 5px;">advertorial</p>
     </div>
@@ -31,6 +35,45 @@
         <a href="">Home</a>
     </header>
 
+    <div class="hero container">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/product.webp" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/body-depilatory_pdp_image-2.webp" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/body-depilatory_pdp_image-4.webp" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/GUEST_7ccfde50-554c-4803-b6b6-e33ce4ba28ef.webp" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="hero-text">
+            <h1>Body Hair Removal Cream
+            </h1>
+            <p>Quickly and gently removes body hair—even on sensitive skin. Includes a spatula applicator for touch-free
+                application and step-by-step instructions.
+            </p>
+            <ul>
+                <li>Keeps legs, arms, stomach, & bikini line smooth up to 7 days</li>
+                <li>
+                    Keeps underarms smooth up to 6 days</li>
+                <li>
+                    Safe for sensitive skin</li>
+                <li>
+                    Subtle iris & suede scent</li>
+                <li>
+                    Dermatologist tested</li>
+            </ul>
+
+        </div>
+    </div>
 
 
 
@@ -38,6 +81,25 @@
 
 
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 
 
     <script src="./js/index.js"></script>
