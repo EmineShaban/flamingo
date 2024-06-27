@@ -2,24 +2,33 @@
     --blue: #2c1755;
     --violet: #cbbde6;
     --violet--gark: #6f52a8;
-
+    --grey--back: #eaeef3;
 }
 
 body {
     font-family: "Lato", sans-serif;
+    padding: 0;
 }
 
-img {
+img, video {
     width: 100%;
 }
 
-.container{
+.container {
     width: 75%;
     margin: auto;
 }
-p,li{
+
+p,
+li {
     font-size: 18px;
     line-height: 1.4;
+    margin: 0;
+}
+.title{
+    font-size: 27px;
+    text-align: center;
+    color: var(--violet--gark);
 }
 
 header {
@@ -42,14 +51,105 @@ header img {
 
 
 /* hero */
-.hero{
+.hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 70px auto;
 }
+
 .swiper {
     width: 300px;
     height: 300px;
 }
-h1{
+
+h1 {
     color: var(--violet--gark);
+}
+
+.hero-text ul li i {
+    color: var(--violet--gark);
+    margin: 5px;
+}
+
+/* ingr */
+
+
+.ingr {
+    background-color: var(--grey--back);
+    padding: 40px 0;
+    margin: 100px auto;
+}
+
+.ingr-h3 {
+    position: relative;
+
+}
+
+.ingr-h3::after {
+    content: "\276F";
+    transform: rotate(90deg);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.rotate90::after {
+    transform: rotate(90deg);
+}
+
+.rotate-90::after {
+    transform: rotate(-90deg);
+}
+
+
+/* how-to-use */
+
+.how-to-use{
+    margin: 70px auto;
+}
+video{
+    width: 70%;
+    display: block;
+    margin: 40px auto;
+}
+
+/* about */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer div.links {
+    text-align: center;
+    margin: 15px;
+}
+
+footer a {
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p.disclaimer {
+    width: 70%;
+    margin: 10px auto;
+    letter-spacing: 0;
+    line-height: 1;
+    font-size: 14px;
 }
