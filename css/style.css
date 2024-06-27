@@ -1,0 +1,21 @@
+body{
+    font-family: "Lato", sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: 40px auto;
+}
+
+header img{
+    width: 20%;
+}
