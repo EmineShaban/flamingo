@@ -173,10 +173,24 @@ video {
 
 .description{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
 }
-
-
+.description img{
+    width: 85%;
+    margin: auto;
+}
+.description ul{
+    margin-top: 20px;
+}
+.description ul li{
+    margin: 15px 0;
+}
+.description ul li b{
+    display: block;
+    color: var(--violet--gark);
+    font-weight: 900;
+}
 
 
 
