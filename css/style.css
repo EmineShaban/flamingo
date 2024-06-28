@@ -10,7 +10,8 @@ body {
     padding: 0;
 }
 
-img, video {
+img,
+video {
     width: 100%;
 }
 
@@ -25,7 +26,8 @@ li {
     line-height: 1.4;
     margin: 0;
 }
-.title{
+
+.title {
     font-size: 27px;
     text-align: center;
     color: var(--violet--gark);
@@ -65,9 +67,11 @@ header img {
 h1 {
     color: var(--violet--gark);
 }
-.hero-text{
+
+.hero-text {
     margin: auto;
 }
+
 .hero-text ul li i {
     color: var(--violet--gark);
     margin: 5px;
@@ -84,7 +88,9 @@ h1 {
 
 .ingr-h3 {
     position: relative;
-
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--violet--gark);
 }
 
 .ingr-h3::after {
@@ -106,10 +112,11 @@ h1 {
 
 /* how-to-use */
 
-.how-to-use{
+.how-to-use {
     margin: 70px auto;
 }
-video{
+
+video {
     width: 70%;
     display: block;
     margin: 40px auto;
@@ -117,25 +124,23 @@ video{
 
 /* about */
 
-.about{
-    width: 60%;
+.about {
+    width: 45%;
     margin: auto;
 }
 
-.about-div{
+.about-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
-/* .reverse{
-    display: grid;
-    grid-template-columns: 1fr 0.7fr;
-} */
-.about-div p{
+
+.about-div p {
     margin: auto 40px;
     font-size: 20px;
- }
+}
 
-.about-div p span{
+.about-div p span {
     font-size: 24px;
     display: block;
     font-weight: 900;
@@ -143,7 +148,40 @@ video{
     text-transform: uppercase;
 }
 
- 
+/* bullets */
+.bullets {
+    width: 45%;
+    margin: 40px auto;
+    margin-bottom: 200px;
+}
+
+.bullets ul {
+
+    margin-left: 70px;
+    margin-top: -30%;
+}
+
+.bullets ul li {
+    font-size: 20px;
+
+}
+
+.bullets ul li i {
+    color: var(--violet--gark);
+    margin: 7px;
+}
+
+.description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
+
+
 
 
 
