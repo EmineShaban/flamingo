@@ -22,9 +22,11 @@ video {
     width: 75%;
     margin: auto;
 }
-.mobile{
+
+.mobile {
     display: none;
 }
+
 p,
 li {
     font-size: 18px;
@@ -616,6 +618,7 @@ footer p.disclaimer {
     header img {
         width: 28%;
     }
+
     .hero-sw {
         width: 300px !important;
         height: 300px !important;
@@ -634,23 +637,29 @@ footer p.disclaimer {
         justify-content: center;
         margin-top: 50px;
     }
-    .description img{
+
+    .description img {
         margin-top: 15px;
     }
+
     video {
         width: 90%;
     }
+
     .about {
         width: 85%;
     }
+
     .zone li {
         text-align: center;
         width: 100%;
     }
+
     .zones-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
     .zone-text {
         padding: 15px 25px;
     }
@@ -660,12 +669,12 @@ footer p.disclaimer {
         margin: auto;
     }
 
-    .order{
+    .order {
         display: block;
-        
+
     }
 
-    .order-from{
+    .order-from {
         margin-top: 40px;
     }
 
@@ -675,31 +684,38 @@ footer p.disclaimer {
 
 @media screen and (max-width: 768px) {
 
-    .hero{
+    .hero {
         display: block;
     }
-    h1{
+
+    h1 {
         text-align: center;
         margin-top: 70px;
     }
+
     header {
         width: 90%;
     }
+
     .bullets ul {
         margin-left: 45px;
         margin-top: -45%;
     }
+
     hr {
         border: unset;
         display: none;
     }
+
     .zones-grid {
         display: block;
     }
+
     .review .review-content {
         display: grid;
         grid-template-columns: 100px 1fr;
     }
+
     .logo-footer {
         width: 25%;
         margin: auto;
@@ -718,16 +734,19 @@ footer p.disclaimer {
 
 
 @media screen and (max-width: 500px) {
-    .desktop{
+    .desktop {
         display: none;
     }
-    .mobile{
+
+    .mobile {
         display: block;
     }
-    .logo{
+
+    .logo {
         width: 30%;
         margin: 40px auto;
     }
+
     p,
     li {
         font-size: 14px;
@@ -735,33 +754,45 @@ footer p.disclaimer {
         margin: 0;
     }
 
-    h1, h2 ,h3, h4, h5{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
         line-height: 1.4;
 
     }
+
     .bullets {
-        width: 100%; 
-    }    
+        width: 100%;
+    }
+
     .bullets ul {
         margin-left: 15px;
         margin-top: -45%;
     }
+
     video {
         width: 100%;
     }
+
     .container {
         width: 90%;
     }
+
     .hero {
         margin-bottom: 30px;
     }
+
     .about-div p {
         margin: auto 20px;
         font-size: 12px;
     }
+
     .about {
         width: 90%;
     }
+
     .about-div p span {
         font-size: 18px;
     }
@@ -771,7 +802,60 @@ footer p.disclaimer {
         margin: auto;
     }
 
+    .title {
+        font-size: 27px;
+    }
 
+    footer div.links {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .review {
+        display: grid;
+
+        grid-template-columns: 50px 1fr;
+        align-items: flex-start;
+        column-gap: 10px;
+    }
+    .review .review-content { 
+        column-gap: 5px;
+    }
+    footer a {
+        margin: 7px auto;
+    }
+
+    .order-from button { 
+        width: 75%;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 411px) {
+.review span.initials {
+    
+    display: none;
+}
+.review{
+    display: block;
+}
+.zones-grid {
+    margin-bottom:0;
+}
+.about-div p {
+    margin: auto 10px;
+}
+.ingr-h3 {
+    position: relative;
+    font-size: 22px;
+}
+.bullets ul li {
+    font-size: 16px;
+}
 
 
 
