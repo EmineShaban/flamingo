@@ -26,10 +26,10 @@
     <div class="adv" style="background-color: black; ">
         <p style="text-transform: uppercase; color: white; text-align: center; padding: 5px;">advertorial</p>
     </div>
-        <div class="logo">
-            <img class="mobile" src="./images/logo.webp" alt="logo">
+    <div class="logo">
+        <img class="mobile" src="./images/logo.webp" alt="logo">
 
-        </div>
+    </div>
     <header>
         <a href="index.html#about">About</a>
         <a href="index.html#howToUse">How to use</a>
@@ -703,7 +703,8 @@
         <div class="order-img">
             <!-- Swiper -->
 
-            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 order-sw">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                class="swiper mySwiper2 order-sw">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="./images/product.webp" />
@@ -717,7 +718,7 @@
                     <div class="swiper-slide">
                         <img src="./images/GUEST_aa01a9fb-fea3-4f80-829a-be6e44a16264.webp" />
                     </div>
-                   
+
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -736,12 +737,12 @@
                     <div class="swiper-slide">
                         <img src="./images/GUEST_aa01a9fb-fea3-4f80-829a-be6e44a16264.webp" />
                     </div>
-                  
+
                 </div>
             </div>
         </div>
         <div class="order-from">
-            <h2 class="title">Flamingo Body-Hair Removal Cream 
+            <h2 class="title">Flamingo Body-Hair Removal Cream
             </h2>
             <form id="order" action="./additional-links/thank-you.php">
                 <input type="text" placeholder="Full name" required>
@@ -789,7 +790,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-   <script>
+    <script>
         var swiper3 = new Swiper(".mySwiper3", {
             effect: "cube",
             grabCursor: true,
@@ -803,27 +804,27 @@
                 el: ".swiper-pagination",
             },
         });
-    </script>  
- <script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      spaceBetween: 10,
-      slidesPerView: 4,
-      freeMode: true,
-      watchSlidesProgress: true,
-    });
-    var swiper2 = new Swiper(".mySwiper2", {
-      loop: true,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: swiper,
-      },
-    });
-  </script>
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
     <script src="./js/index.js"></script>
     <script type='text/javascript' src='/cdn/plugins/consent-banner/consent-banner.min.js'></script>
     <script src='/cdn/js/fa_events.js'></script>
