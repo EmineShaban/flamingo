@@ -22,7 +22,9 @@ video {
     width: 75%;
     margin: auto;
 }
-
+.mobile{
+    display: none;
+}
 p,
 li {
     font-size: 18px;
@@ -61,11 +63,13 @@ header img {
     grid-template-columns: 1fr 1fr;
     margin: 70px auto;
     margin-bottom: 100px;
+    align-items: center;
+
 }
 
 .hero-sw {
-    width: 400px!important;
-    height: 400px!important;
+    width: 400px !important;
+    height: 400px !important;
 }
 
 h1 {
@@ -180,6 +184,7 @@ video {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     margin: 100px auto;
+    margin-top: 300px;
 }
 
 .description img {
@@ -354,71 +359,74 @@ video {
     background-color: var(--grey--back);
     color: var(--main-light-grey-font);
     padding-bottom: 65px;
-  }
-  
-  .reviews h3 {
+}
+
+.reviews h3 {
     font-size: 25px;
     padding-top: 25px;
     margin-top: 0;
     text-align: left;
 
-  }
-  
-  .reviews-div {
+}
+
+.reviews-div {
     width: 70%;
     margin: auto;
-  }
-  .reviews-div p {
+}
+
+.reviews-div p {
     margin-top: 0;
-  }
-  .stars{
+}
+
+.stars {
     color: var(--blue);
     font-size: 25px;
 
-  }
- 
-  
-  .review p i {
+}
+
+
+.review p i {
     font-size: 16px;
     color: var(--violet);
     margin-bottom: 5px;
-  }
-  
-  .review p {
+}
+
+.review p {
     margin: 0;
-  }
- 
-  
-  /* Pagination links */
-  .pagination {
+}
+
+
+/* Pagination links */
+.pagination {
     margin: 10px 0;
-  }
-  .pagination p {
+}
+
+.pagination p {
     color: black;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color 0.3s;
-  }
-  
-  /* Style the active/current link */
-  .pagination p.active {
+}
+
+/* Style the active/current link */
+.pagination p.active {
     background-color: var(--blue);
     color: white;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .pagination p:hover:not(.active) {
+}
+
+/* Add a grey background color on mouse-over */
+.pagination p:hover:not(.active) {
     background-color: #ddd;
-  }
-  
-  .second,
-  .third {
+}
+
+.second,
+.third {
     display: none;
-  }
+}
 
 
-  .review {
+.review {
     display: grid;
     grid-template-columns: 50px 1fr;
     align-items: flex-start;
@@ -439,6 +447,7 @@ video {
     align-items: center;
     justify-content: center;
 }
+
 .review .review-content {
     display: grid;
     grid-template-columns: 170px 1fr;
@@ -447,7 +456,7 @@ video {
 }
 
 .review .author {
-    font-size: 20px; 
+    font-size: 20px;
     margin: 0;
 }
 
@@ -460,11 +469,11 @@ video {
     margin: 0;
 }
 
-.review-content .verified{
+.review-content .verified {
     font-size: 14px;
 }
 
-.review-content .comm-text{
+.review-content .comm-text {
     margin: 10px 0;
 }
 
@@ -479,7 +488,7 @@ video {
     margin: 50px auto;
 }
 
- 
+
 .order-from {
     margin: auto 0;
     background-color: var(--violet);
@@ -496,7 +505,7 @@ select {
     margin: 5px 0;
     padding: 5px;
 }
- 
+
 
 .order-from button {
     text-align: center;
@@ -514,26 +523,29 @@ select {
     width: 50%;
     margin: 25px auto;
 }
-.order-sw2{
+
+.order-sw2 {
     width: 500px;
 }
-.order-sw{
+
+.order-sw {
     width: 500px;
 
 }
- 
 
 
 
-  
+
+
 
 
 
 /* footer */
-.logo-footer{
+.logo-footer {
     width: 12%;
     margin: auto;
 }
+
 footer div.links {
     text-align: center;
     margin: 15px;
@@ -556,4 +568,215 @@ footer p.disclaimer {
     letter-spacing: 0;
     line-height: 1;
     font-size: 14px;
+}
+
+
+
+
+
+@media screen and (max-width: 1800px) {
+
+    .description {
+        margin-top: 100px;
+    }
+
+
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 85%;
+    }
+
+    .about {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    .order {
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        margin: 50px auto;
+        column-gap: 30px;
+    }
+
+    .order-sw {
+        width: 450px;
+        margin: auto;
+    }
+
+}
+
+
+
+@media screen and (max-width: 994px) {
+    header img {
+        width: 28%;
+    }
+    .hero-sw {
+        width: 300px !important;
+        height: 300px !important;
+    }
+
+    .bullets {
+        width: 80%;
+        margin-bottom: 120px;
+
+    }
+
+    .description {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .description img{
+        margin-top: 15px;
+    }
+    video {
+        width: 90%;
+    }
+    .about {
+        width: 85%;
+    }
+    .zone li {
+        text-align: center;
+        width: 100%;
+    }
+    .zones-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .zone-text {
+        padding: 15px 25px;
+    }
+
+    .reviews-div {
+        width: 80%;
+        margin: auto;
+    }
+
+    .order{
+        display: block;
+        
+    }
+
+    .order-from{
+        margin-top: 40px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .hero{
+        display: block;
+    }
+    h1{
+        text-align: center;
+        margin-top: 70px;
+    }
+    header {
+        width: 90%;
+    }
+    .bullets ul {
+        margin-left: 45px;
+        margin-top: -45%;
+    }
+    hr {
+        border: unset;
+        display: none;
+    }
+    .zones-grid {
+        display: block;
+    }
+    .review .review-content {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+    }
+    .logo-footer {
+        width: 25%;
+        margin: auto;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .logo{
+        width: 30%;
+        margin: 40px auto;
+    }
+    p,
+    li {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    h1, h2 ,h3, h4, h5{
+        line-height: 1.4;
+
+    }
+    .bullets {
+        width: 100%; 
+    }    
+    .bullets ul {
+        margin-left: 15px;
+        margin-top: -45%;
+    }
+    video {
+        width: 100%;
+    }
+    .container {
+        width: 90%;
+    }
+    .hero {
+        margin-bottom: 30px;
+    }
+    .about-div p {
+        margin: auto 20px;
+        font-size: 12px;
+    }
+    .about {
+        width: 90%;
+    }
+    .about-div p span {
+        font-size: 18px;
+    }
+
+    .order-sw {
+        width: 350px;
+        margin: auto;
+    }
+
+
+
+
+
+
+
+
+
 }
