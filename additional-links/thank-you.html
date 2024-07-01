@@ -10,9 +10,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
     </style>
     <style>
+        img{
+            width: 100%;
+        }
         div.image-logo-1 {
             display: flex;
             justify-content: center;
+            width: 10%;
+            margin: auto;
         }
         
         div.image-product {
@@ -20,8 +25,9 @@
             width: 50%;
         }
         
-        div.image-product img {
-            width: 80%;
+        div.image-product {
+            width: 30%;
+            margin: auto;
         }
         
         div.div-wrapper {
@@ -34,23 +40,24 @@
             margin-top: 11vh;
             font-size: 2vh;
             width: 50%;
+            margin: auto 0;
         }
     </style>
 </head>
 
 <body>
     <div class="image-logo-1">
-        <img src="../images/logo.jpg" class="logo-1" />
+        <img src="../images/logo.webp" class="logo-1" />
     </div>
     <hr />
     <div class="div-wrapper">
 
         <div class="image-product">
-            <img src="../images/section3.jpg" class="product" />
+            <img src="../images/product.webp" class="product" />
         </div>
 
         <div class="header-name">
-            <p class="name-product">DERMA E Advanced Peptides and Collagen Moisturizer</p>
+            <p class="name-product">Body Hair Removal Cream </p>
             <p class="name-product-text">Thank you for your order, it has been successfully received!</p>
             <p class="name-product-text-bold">Order details: </p>
             <p class="name-product-text"><i class="far fa-check-circle"></i> Order Number: #524956</p>
