@@ -63,9 +63,9 @@ header img {
     margin-bottom: 100px;
 }
 
-.swiper {
-    width: 400px;
-    height: 400px;
+.hero-sw {
+    width: 400px!important;
+    height: 400px!important;
 }
 
 h1 {
@@ -471,8 +471,57 @@ video {
 
 
 
+/* order */
 
+.order {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    margin: 50px auto;
+}
 
+ 
+.order-from {
+    margin: auto 0;
+    background-color: var(--violet);
+    padding: 40px 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+select {
+    margin: 5px 0;
+    padding: 5px;
+}
+ 
+
+.order-from button {
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    background-color: var(--violet--gark);
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 50%;
+    margin: 25px auto;
+}
+.order-sw2{
+    width: 500px;
+}
+.order-sw{
+    width: 500px;
+
+}
+ 
 
 
 
@@ -481,6 +530,10 @@ video {
 
 
 /* footer */
+.logo-footer{
+    width: 12%;
+    margin: auto;
+}
 footer div.links {
     text-align: center;
     margin: 15px;

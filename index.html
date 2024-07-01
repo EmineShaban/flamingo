@@ -28,16 +28,16 @@
     </div>
 
     <header>
-        <a href="">Home</a>
-        <a href="">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#howToUse">How to use</a>
         <img src="./images/logo.webp" alt="logo">
-        <a href="">Home</a>
-        <a href="">Home</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#reviews">Reviews</a>
     </header>
 
     <div class="hero container">
         <!-- Swiper -->
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper3 hero-sw">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="./images/product.webp" />
@@ -82,7 +82,7 @@
         </ul>
     </div>
 
-    <div class="description container">
+    <div class="description container" id="about">
         <img src="./images/GUEST_aa01a9fb-fea3-4f80-829a-be6e44a16264.webp" alt="">
         <div>
             <h3 class="title">Description</h3>
@@ -116,7 +116,7 @@
         </div>
     </div>
 
-    <div class="how-to-use container">
+    <div class="how-to-use container" id="howToUse">
 
         <h3 class="title"> How to Use
         </h3>
@@ -696,10 +696,75 @@
         </div>
     </div>
 
+    <div class="order container" id="order">
+        <div class="order-img">
+            <!-- Swiper -->
 
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 order-sw">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/product.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/61a0AnHn6WL._SL1500_.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/GUEST_b7c7f334-d50e-407b-bbce-327ecaf0d2df.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/GUEST_aa01a9fb-fea3-4f80-829a-be6e44a16264.webp" />
+                    </div>
+                   
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper order-sw">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/product.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/61a0AnHn6WL._SL1500_.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/GUEST_b7c7f334-d50e-407b-bbce-327ecaf0d2df.webp" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/GUEST_aa01a9fb-fea3-4f80-829a-be6e44a16264.webp" />
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="order-from">
+            <h2 class="title">Flamingo Body-Hair Removal Cream 
+            </h2>
+            <form id="order" action="./additional-links/thank-you.php">
+                <input type="text" placeholder="Full name" required>
+                <input type="text" placeholder="Adress" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Telephone" required>
+                <select name="delivery" id="delivery">
+                    <option value="Cash">Cash on delivery</option>
+                </select>
+                <select name="packs" id="packs">
+                    <option value="one">1 Pack - <b>9.50 euros </b></option>
+                    <option value="two">2 Pack (9 euros each) - <b>18 euros </b></option>
+                    <option value="three">3 Pack (8 euros each) - <b>16 euros</b></option>
+                </select>
+                <button>Order Now</button>
+
+            </form>
+
+        </div>
+    </div>
 
 
     <footer>
+        <div class="logo-footer">
+            <img src="./images/footer-logo.svg" alt="">
+        </div>
         <div class="links">
             <a href="./additional-links/ingredients.html">Ingredients</a>
             <a href="./additional-links/contacts.html">Contacts</a>
@@ -721,8 +786,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
+   <script>
+        var swiper3 = new Swiper(".mySwiper3", {
             effect: "cube",
             grabCursor: true,
             cubeEffect: {
@@ -735,9 +800,27 @@
                 el: ".swiper-pagination",
             },
         });
-    </script>
-
-
+    </script>  
+ <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
     <script src="./js/index.js"></script>
     <script type='text/javascript' src='/cdn/plugins/consent-banner/consent-banner.min.js'></script>
     <script src='/cdn/js/fa_events.js'></script>
